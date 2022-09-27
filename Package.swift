@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "Legion",
             dependencies: [],
-            path: "Legion"),
+            path: "Sources"),
         .testTarget(
             name: "LegionTests",
             dependencies: ["Legion"]),
