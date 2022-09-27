@@ -1,0 +1,19 @@
+{
+  "images" : [
+    {
+      "filename" : "Prontera.jpeg",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "en"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
