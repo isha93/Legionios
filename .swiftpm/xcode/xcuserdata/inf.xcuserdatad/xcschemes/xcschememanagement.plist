@@ -10,5 +10,23 @@
 			<integer>0</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>Legion</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>LegionTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>Legion_Legion</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
