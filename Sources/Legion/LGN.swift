@@ -11,7 +11,7 @@ public class LGN {
     private static var sharedInstance : LGN!
     public var config : Ecosystem?
     
-    private init(config: Ecosystem?) {
+    public init(config: Ecosystem?) {
         self.config = config
         LGN.sharedInstance = self
     }
