@@ -30,7 +30,7 @@ import Foundation
 
 
 
-final class LGN {
+public class LGN {
   static var shared: LGN {
     if let initializedShared = _shared {
       return initializedShared
