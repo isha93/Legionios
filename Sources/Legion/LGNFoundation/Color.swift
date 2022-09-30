@@ -13,7 +13,8 @@ public extension Color {
 }
 
 public struct LGNColor {
-    public let primary : Color = Color("\(LGN.sharedInstance.config.module)Primary", bundle: .module)
+    private let module = LGN.sharedInstance().config.module
+    public let primary : Color = Color("\(module)Primary", bundle: .module)
 }
 
 public enum Ecosystem{
