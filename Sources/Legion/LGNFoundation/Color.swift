@@ -16,7 +16,7 @@ public struct LGNColor {
     public var primary : Color {
         if let theme : String = LGN.shared().config?.module {
             print(Color("\(theme)/Primary"))
-            return Color("\(theme)/Primary")
+            return Color("\(theme)/Primary", bundle: .module)
         }
         return .primary
     }
