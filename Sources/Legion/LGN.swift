@@ -43,7 +43,7 @@ public class LGN {
   /// The ParameterSingleton setup func. Will initialize the singleton with the config. Without a config, `shared` will cause a `fatalError`
   ///
   /// - Parameter config: The config needed for initializing the singleton
-  class func setup(withConfig config: Ecosystem) {
+  open class func setup(withConfig config: Ecosystem) {
     _shared = LGN(withConfig: config)
   }
 
