@@ -16,13 +16,13 @@ public class LGN {
         LGN.sharedInstance = self
     }
     
-    open class func shared(config: Ecosystem? = .LGN) -> LGN {
+    open class func shared(theme: Ecosystem = .AGR) -> LGN {
         switch sharedInstance {
         case let i?:
-            i.config = config
+            i.config = theme
             return i
         default:
-            sharedInstance = LGN(config: config)
+            sharedInstance = LGN(config: theme)
             return sharedInstance
         }
     }
