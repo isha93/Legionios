@@ -16,7 +16,7 @@ public class LGN {
         LGN.sharedInstance = self
     }
     
-    static func shared(config: Ecosystem? = .LGN) -> LGN {
+    open class func shared(config: Ecosystem? = .LGN) -> LGN {
         switch sharedInstance {
         case let i?:
             i.config = config
