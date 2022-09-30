@@ -14,13 +14,13 @@ public extension Color {
 
 public struct LGNColor {
     public var primary : Color {
-        if let theme : String = LGN.shared().config?.module {
+        if let theme : String = LGN.sharedInstance.config?.module {
             print(Color("\(theme)/Primary"))
             return Color("\(theme)/Primary", bundle: .module)
         }
         return .primary
     }
-    let asu = "\(String(describing: LGN.shared().config?.module))"
+    let asu = "\(String(describing: LGN.sharedInstance.config?.module))"
 }
 
 public enum Ecosystem{

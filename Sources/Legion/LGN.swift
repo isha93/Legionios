@@ -8,7 +8,7 @@
 import Foundation
 
 public class LGN {
-    private static var sharedInstance : LGN!
+    public static var sharedInstance : LGN!
     public var config : Ecosystem?
     
     public init(config: Ecosystem?) {
@@ -16,7 +16,7 @@ public class LGN {
         LGN.sharedInstance = self
     }
     
-    open class func shared(theme: Ecosystem? = .AGR) -> LGN {
+    open class func shared(theme: Ecosystem) -> LGN {
         switch sharedInstance {
         case let i?:
             i.config = theme
