@@ -8,17 +8,22 @@
 import Foundation
 
 public class LGN {
-    public init(){}
-    public var config : Ecosystem = .LGN
+    private static var sharedInstance : LGN!
+    public var config : Ecosystem?
     
-    class var swiftSharedInstance: LGN {
-        struct Singleton {
-            static let instance = LGN()
-        }
-        return Singleton.instance
+    private init(config: Ecosystem?) {
+        self.config = config
+        LGN.sharedInstance = self
     }
     
-    open class func sharedInstance() -> LGN {
-        return LGN.swiftSharedInstance
+    static func shared(config: Ecosystem? = .LGN) -> LGN {
+        switch sharedInstance {
+        case let i?:
+            i.config = config
+            return i
+        default:
+            sharedInstance = LGN(config: config)
+            return sharedInstance
+        }
     }
 }
