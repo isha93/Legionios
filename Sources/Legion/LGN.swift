@@ -9,6 +9,6 @@ import Foundation
 
 public class LGN {
     public init(){}
-    static let sharedInstance = LGN()
+    public let sharedInstance = LGN()
     public var config : Ecosystem = .LGN
 }
