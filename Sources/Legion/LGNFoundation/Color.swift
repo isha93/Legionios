@@ -15,12 +15,10 @@ public extension Color {
 public struct LGNColor {
     public var primary : Color {
         if let theme : String = LGN.shared.doSomething(){
-            print(Color("\(theme)/Primary"))
             return Color("\(theme)/Primary", bundle: .module)
         }
         return .primary
     }
-    let asu = "\(String(describing: LGN.shared.doSomething()))"
 }
 
 public enum Ecosystem{

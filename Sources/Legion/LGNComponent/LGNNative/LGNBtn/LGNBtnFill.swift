@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(macOS 15.15, *)
 public struct LGNBtnFill: View {
     public init(){
         

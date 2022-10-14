@@ -15,7 +15,7 @@ public class LGN {
         if let initializedShared = _shared {
             return initializedShared
         }
-        fatalError("Singleton not yet initialized. Run setup(withConfig:) first")
+        return LGN(withConfig: .LGN)
     }
     
     /// The ParameterSingleton setup func. Will initialize the singleton with the config. Without a config, `shared` will cause a `fatalError`
